@@ -50,6 +50,8 @@ while machine_on:
           print(f"Milk: {resources["milk"]}ml")
           print(f"Coffee: {resources["coffee"]}g")
           print(f"Money: ${profit}")
+     elif choice not in MENU:
+         print(f"Sorry, we do not have {choice}. Please choose again.")
      else:
          drink = MENU[choice]
          if is_resource_sufficient(drink["ingredients"]):
